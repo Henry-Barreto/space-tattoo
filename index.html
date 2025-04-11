@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Espacetatto</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container-header">
+            <div class="container-logo">
+                <img class="logottatto" src="./Imagens/Texto do seu parágrafo.gif" alt="Logo Espacetatto">
+            </div>
+            <nav>
+                <ul>
+                    <li class="portifolio"><a href="#container-wrapper"><b>portifólio</b></a> </li>
+                    <li class="disponiveis"><a href="#container-desenhos"> <b>disponiveis </b> </a> </li>
+                    <li class="agendamento"> <a href="#container-agenda" id="btnAgendamento"> <b>agendamento</b></a>
+                    </li>
+                    <li class="login">
+                        <a href="#"> <b id="userNameDisplay">login/regis</b> </a>
+                        <div class="dropdown-menu" id="dropdownMenu" style="display: none;">
+                            <a href="#" id="meusAgendamentos">Agendamentos</a>
+                            <button id="logoutBtn">Sair</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ===== HEADER ===== -->
+
+    <main>
+        <!-- ===== SOBRE ===== -->
+        <section class="container-sectiontwo">
+            <article class="text-sobre">
+                <h2 class="titulosobre"><b>quem nós <br />
+                        somos?</b></h2>
+                <p>
+                    No mercado desde 2004, <br />
+                    aqui na Space Tatto <br />
+                    renovamos a cada ano a <br />
+                    forma de fazer tatuagem.
+                </p>
+            </article>
+            <article class="container-img">
+                <img class="img-tatto" src="./Imagens/Choosing Your First Tattoo.jpeg" alt="">
+            </article>
+        </section>
+        <!-- ===== SOBRE ===== -->
+
+        <!-- ===== PORTFÓLIO ===== -->
+        <div data-aos="fade-up" id="container-wrapper">
+            <section class="container-section">
+                <div class="container-titulo">
+                    <h2 class="titulo"><b>Portifólio</b></h2>
+                </div>
+
+
+                <div class="container-wrapper">
+                    <div class="slider-wrapper">
+
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                            chevron_left
+                        </button>
+
+                        <ul class="image-list">
+                            <img class="image-item" src="Imagens/2.png" alt="img">
+                            <img class="image-item" src="Imagens/1.png" alt="img">
+                            <img class="image-item" src="Imagens/3.png" alt="img">
+                            <img class="image-item" src="Imagens/4.png" alt="img">
+                            <img class="image-item" src="Imagens/5.png" alt="img">
+                            <img class="image-item" src="Imagens/6.png" alt="img">
+                            <img class="image-item" src="Imagens/7.png" alt="img">
+                            <img class="image-item" src="Imagens/magikpowerred.jpg" alt="img">
+                        </ul>
+
+
+                        <button id="next-slide" class="slide-button material-symbols-rounded">
+                            chevron_right
+                        </button>
+                    </div>
+
+                    <div class="slider-scrollbar">
+                        <div class="scrollbar-track">
+                            <div class="scrollbar-thumb"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- ===== PORTFÓLIO ===== -->
+
+
+        <!-- ===== DESENHOS DISPONÍVEIS ===== -->
+        <div data-aos="fade-up" id="container-desenhos">
+            <section class="section-desenhos" id="desenhos">
+                <div class="container-desenhos">
+                    <h2 class="titulo-galeria">desenhos disponíveis.</h2>
+                    <div class="grid-desenhos">
+                        <div class="item-desenho"><img src="./Imagens/grid/8.png" alt="Desenho 1"></div>
+                        <div class="item-desenho"><img src="./Imagens/grid/9.png" alt="Desenho 2"></div>
+                        <div class="item-desenho"><img src="./Imagens/grid/10.png" alt="Desenho 3"></div>
+                        <div class="item-desenho"><img src="./Imagens/grid/11.png" alt="Desenho 4"></div>
+                        <div class="item-desenho"><img src="./Imagens/grid/12.png" alt="Desenho 5"></div>
+                        <div class="item-desenho"><img src="./Imagens/grid/13.png" alt="Desenho 6"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ===== DESENHOS DISPONÍVEIS ===== -->
+
+
+        <!-- ===== AGENDAMENTO ===== -->
+        <div data-aos="fade-up" id="container-agenda">
+            <section class="container-sectiontree" id="sectiontree">
+                <div class="container-titulo3">
+                    <h2 class="titulo3"><b>gostaria de agendar?</b></h2>
+                </div>
+
+                <div class="contato-agendamento">
+                    <div class="fale-conosco">
+                        <span class="texto-contato">Fale conosco:</span>
+                        <div class="icones-contato">
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <div class="login-registro" id="abrirLoginPopup">
+                        Entre/Registre
+                        para <u>agendar</u>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ===== AGENDAMENTO ===== -->
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p> Av. Exemplo, 123 – Cidade</p>
+                <p> Seg a Sáb – 10h às 19h</p>
+            </div>
+            <div class="footer-img">
+                <img class="logotfooter" src="./Imagens/logoSpaceTattocolorido.png" alt="Logo Espacetatto">
+            </div>
+            <div class="footer-info">
+                <p> (11) 99999-9999</p>
+                <p> contato@spacetatto.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Spacetatto | Desenvolvido por Mateus bonfim & Henrique Barreto</p>
+        </div>
+    </footer>
+    <!-- ===== FOOTER ===== -->
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+
+            <!-- Botão para fechar o modal -->
+            <span class="close-button">&times;</span>
+            <!-- Botão para fechar o modal -->
+
+            <!-- Logo dentro do modal -->
+            <div class="container-space">
+                <img class="img-space" src="./Imagens/logoSpaceTatto.png" alt="">
+            </div>
+            <!-- Logo dentro do modal -->
+
+            <!-- Formulário de login -->
+            <form id="loginForm">
+                <div class="container-loginform">
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <input type="password" id="password" placeholder="Senha" required>
+                </div>
+                <br />
+                <label><input type="checkbox" id="rememberMe"> Lembrar login</label>
+                <br />
+                <button type="submit">Entrar</button>
+                <p id="loginError" class="error-message"></p>
+            </form>
+            <!-- Formulário de login -->
+        </div>
+    </div>
+
+    <!-- Modal para exibir agendamentos do usuário -->
+    <div id="modalAgendamentos" class="modal-Agendamentos">
+        <div class="Agendamentos-content">
+            <span class="close-agendamentos">&times;</span>
+            <h2>Meus Agendamentos</h2>
+            <ul id="listaAgendamentos"></ul>
+        </div>
+    </div>
+    <!-- Modal para exibir agendamentos do usuário -->
+
+    <!-- Popup para agendamento (seleção de data e hora) -->
+    <div id="popupAgendamento" class="popup-agendamento">
+        <div class="popup-agendamento-content">
+            <span id="fecharAgendamento" class="close-agendamento">&times;</span>
+            <h2>Escolha sua data e hora</h2>
+
+            <!-- Campo com calendário (flatpickr) -->
+            <input id="inputAgendamento" type="text" placeholder="Selecione..." />
+            <button id="btnConfirmarAgendamento" class="botao-confirmar">Confirmar</button>
+            <p id="msgSucessoAgendamento" class="msg-sucesso">Data agendada com sucesso!</p>
+        </div>
+    </div>
+    <!-- Popup para agendamento (seleção de data e hora) -->
+
+    <!-- Estilos do Flatpickr (calendário) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Script do Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Script da biblioteca AOS para animações ao rolar -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa o AOS
+    </script>
+
+    <!-- Script principal do site -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

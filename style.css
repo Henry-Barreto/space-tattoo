@@ -1,0 +1,1350 @@
+/* Define duas fontes personalizadas para usar no site */
+@font-face {
+  font-family: ttnorms;
+  src: url(./Fonts/TTNorms-Medium.otf);
+}
+
+@font-face {
+  font-family: agrandir;
+  src: url(./Fonts/Agrandir-Regular.otf);
+}
+
+/* Define duas fontes personalizadas para usar no site */
+
+/* Estilo base do body: centraliza tudo com flexbox */
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Estilo base do body: centraliza tudo com flexbox */
+
+/* Aplica flexbox e centralização para os containers principais */
+.container-header,
+.container-logo,
+nav,
+.container-section,
+.container-titulo,
+.container-sectiontwo,
+.container-sectiontree,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Aplica flexbox e centralização para os containers principais */
+
+/* Espaçamento vertical entre seções */
+.container-section,
+.container-sectiontree,
+.section-desenhos {
+  margin-top: 5vh;
+}
+
+/* Espaçamento vertical entre seções */
+
+/* Cabeçalho com logo e menu de navegação */
+.container-header {
+  display: flex;
+  flex-direction: column;
+  width: 88vw;
+  height: 28vw;
+  margin: 3vw auto 0 auto;
+  margin-bottom: 5vh;
+  gap: 1.3vh;
+  box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+  border: solid #00000069 0.05vw;
+  border-radius: 0.52vw;
+}
+
+.container-logo {
+  margin-top: 2.6vw;
+  padding: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logottatto {
+  width: 70%;
+  height: auto;
+}
+
+/* Cabeçalho com logo e menu de navegação */
+
+/* Navegação principal */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 84vw;
+  height: 4vw;
+  padding: 0 1.04vw;
+  border-radius: 1vh;
+  background-color: #000000;
+  font-family: ttnorms;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 1.04vw;
+}
+
+nav li a:hover {
+  background-color: #ffffff20;
+  color: #ff0000;
+}
+
+/* Navegação principal */
+
+/* Links do menu */
+.portifolio a,
+.disponiveis a,
+.agendamento a,
+.login a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3vw;
+  border-radius: 0.26vw;
+  transition: background-color 0.3s;
+  padding: 0.3vw 0.6vw;
+}
+
+.login {
+  margin-left: auto;
+}
+
+/* Links do menu */
+
+/* Seção "sobre" */
+.container-sectiontwo {
+  width: 88vw;
+  height: 40vw;
+  display: flex;
+  box-shadow: 0 0 2.6vw rgba(0, 0, 0, 0.3);
+  border: solid #00000069 0.05vw;
+  border-radius: 0.52vw;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.text-sobre {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 13.5vw 3.1vw 3.1vw 3.1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #000000;
+}
+
+.titulosobre {
+  font-family: ttnorms;
+  font-size: 4.2vw;
+  font-weight: 800;
+  margin-bottom: 1.04vw;
+  line-height: 0.8;
+}
+
+.text-sobre p {
+  font-family: agrandir;
+  font-size: 1.7vw;
+  line-height: 1.3;
+}
+
+.container-img {
+  width: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-tatto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0.52vw 0.52vw 0;
+}
+
+/* Seção "sobre" */
+
+/* Seção com o carrossel de imagens */
+.container-section {
+  flex-direction: column;
+  width: 88vw;
+  height: 45vw;
+  box-shadow: 0 0 2.6vw rgba(0, 0, 0, 0.3);
+  border: solid #00000069 0.05vw;
+  border-radius: 0.52vw;
+}
+
+.container-titulo {
+  height: 11.8vw;
+}
+
+.titulo {
+  font-family: ttnorms;
+  font-size: 4.2vw;
+  color: #000000;
+}
+
+.container-wrapper {
+  max-width: 104.1vw;
+  width: 85%;
+  transform: scale(1);
+  transform-origin: top;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 2.6vw;
+  width: 2.6vw;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.1vw;
+  background: #000000;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -1.3vw;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -1.3vw;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.94vw;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 1.56vw;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 16.9vw;
+  height: 20.8vw;
+  object-fit: cover;
+  border-radius: 0.26vw;
+}
+
+.container-wrapper .slider-scrollbar {
+  height: 1.25vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 0.1vw;
+  display: flex;
+  align-items: center;
+  border-radius: 0.2vw;
+  position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 0.21vw;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 0.42vw;
+  top: -0.1vw;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.52vw;
+  bottom: -0.52vw;
+}
+
+/* Seção com o carrossel de imagens */
+
+/* Seção com a grade de desenhos */
+.section-desenhos {
+  width: 100%;
+  padding: 5vh 0;
+  background-color: #ffffff;
+  gap: 1.3vh;
+  box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+  border: solid #00000069 0.05vw;
+  border-radius: 0.52vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-galeria {
+  font-size: 4.2rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin: 2vh 0;
+  font-family: ttnorms;
+}
+
+.grid-desenhos {
+
+  width: 40vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5vw;
+  row-gap: 2vw;
+  padding: 1vw;
+  justify-items: center;
+  margin: 0 auto;
+
+}
+
+.item-desenho {
+  border: solid #00000069 0.05vw;
+  border-radius: 13px;
+  width: 100%;
+  max-width: 12vw;
+  transition: transform 0.3s ease;
+}
+
+.item-desenho:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border: solid #00000069 0.05vw;
+}
+
+.item-desenho img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5vw;
+}
+
+/* Seção com a grade de desenhos */
+
+/* Última seção com formulário de agendamento ou contato */
+.container-sectiontree {
+  flex-direction: column;
+  width: 88vw;
+  height: auto;
+  box-shadow: 0 0 2.6vw rgba(0, 0, 0, 0.3);
+  border: solid #00000069 0.05vw;
+  border-radius: 0.52vw;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.container-titulo3 {
+  height: auto;
+  margin-top: 6vh;
+}
+
+.titulo3 {
+  font-family: ttnorms;
+  font-size: 6rem;
+  color: #000000;
+}
+
+.contato-agendamento {
+  margin-bottom: 4vw;
+  font-family: agrandir;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  width: 65vw;
+  height: calc(100% - 11.8vw);
+  box-sizing: border-box;
+}
+
+.fale-conosco {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.texto-contato {
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: #000;
+}
+
+
+.login-registro {
+  font-size: 2vw;
+  color: #000;
+}
+
+
+.icones-contato {
+  display: flex;
+  gap: 1.5vw;
+  font-size: 2.8vw;
+  color: #000000a0;
+}
+
+/* Última seção com formulário de agendamento ou contato */
+
+/* Estilo do modal de login/registro */
+#loginModal{
+  display: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: ttnorms;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: clamp(300px, 40vw, 400px);
+  padding: clamp(20px, 2vw, 30px);
+  gap: 2vh;
+  border-radius: 0.52vw;
+  box-shadow: 0 0 1.56vw #000;
+  background-color: #fff;
+}
+
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+  padding: 0.52vw;
+  font-size: 1.1rem;
+  border: 0.05vw solid #aaa;
+  border-radius: 0.26vw;
+  margin-top: 0.52vw;
+  width: 100%;
+  font-family: agrandir;
+}
+
+.container-loginform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-content button {
+  margin-top: 0.52vw;
+  padding: 0.52vw;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.26vw;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-content .error-message {
+  color: red;
+  font-size: 1rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1vw;
+  right: 1.5vw;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Estilo do modal de login/registro */
+
+/* Estilo do container de imagem da home */
+.container-space {
+  padding: 2vw;
+}
+
+.img-space {
+  width: 55%;
+  height: auto;
+}
+
+/* Estilo do container de imagem da home */
+
+/* Dropdown personalizado para menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0.6vw;
+  padding: clamp(0.3rem, 1vw, 0.8rem);
+  right: 0;
+  z-index: 1000;
+  font-size: clamp(0.5rem, 1vw, 0.9rem);
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: clamp(120px, 25vw, 200px);
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: clamp(0.3rem, 0.8vw, 0.6rem) clamp(0.8rem, 2vw, 1.2rem);
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+#dropdownMenu a#meusAgendamentos {
+  display: block;
+  padding: clamp(0.5rem, 1vw, 0.7rem);
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.login {
+  position: relative;
+}
+
+/* Dropdown personalizado para menu */
+
+/* Modal principal de agendamentos (janela sobreposta) */
+.modal-Agendamentos {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  font-family: ttnorms;
+}
+
+.Agendamentos-content {
+  background-color: #fff;
+  margin: 10vh auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  border-radius: 1.5vw;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.modal-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-content li {
+  padding: clamp(0.6rem, 1.5vw, 1rem);
+  border-bottom: 1px solid #ccc;
+}
+
+.close-agendamentos {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  cursor: pointer;
+  color: #333;
+}
+
+/* Modal principal de agendamentos (janela sobreposta) */
+
+/* Modal do popup de agendamento (campo para usuário preencher) */
+.popup-agendamento {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-agendamento-content {
+  background-color: #fff;
+  margin: 12vh auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  border-radius: 10px;
+  width: clamp(270px, 80vw, 340px);
+  font-family: ttnorms;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-agendamento-content h2 {
+  margin-bottom: clamp(0.8rem, 2vw, 1.5rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 600;
+}
+
+.popup-agendamento input[type="text"] {
+  padding: clamp(0.6rem, 1.5vw, 0.9rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 100%;
+  font-family: agrandir;
+}
+
+.close-agendamento {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  cursor: pointer;
+}
+
+.botao-confirmar {
+  margin-top: 1rem;
+  padding: clamp(0.8rem, 2vw, 1.2rem);
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: ttnorms;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botao-confirmar:hover {
+  background-color: #333;
+}
+
+.msg-sucesso {
+  display: none;
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-family: agrandir;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal do popup de agendamento (campo para usuário preencher) */
+
+/* Customização leve do calendário */
+.flatpickr-calendar {
+  font-family: agrandir;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.flatpickr-day.today {
+  background-color: #00000010;
+  border: 1px solid #000;
+}
+
+.flatpickr-day.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+.flatpickr-time input {
+  font-size: 1.1rem;
+}
+
+
+/* Estilo geral do rodapé */
+footer {
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: agrandir;
+}
+
+.footer-container {
+  margin-top: 7vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 4vw;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.footer-img img.logotfooter {
+  width: 12vw;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1vh;
+}
+
+.footer-info {
+  text-align: center;
+  font-size: 1vw;
+  line-height: 0.7;
+  color: #ffffff60;
+  flex: 1;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.footer-img {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img img.logotfooter {
+  width: 10vw;
+  max-width: 120px;
+  height: auto;
+}
+
+.footer-bottom {
+  margin-top: 3vh;
+  font-size: 0.9vw;
+  color: #ffffff60;
+  text-align: center;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* ou center, dependendo do visual que quiser */
+  }
+
+  .container-header {
+    width: 88vw;
+    height: 86%;
+    margin: 3vw auto 0 auto;
+    margin-bottom: 5vh;
+    gap: 1.3vh;
+    box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+    border: solid #00000069 0.05vw;
+    border-radius: 0.52vw;
+  }
+
+  .container-logo {
+    margin-top: 2.6vw;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logottatto {
+    width: 70%;
+    height: auto;
+  }
+
+  .portifolio a,
+  .disponiveis a,
+  .agendamento a,
+  .login a {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+  }
+
+  .titulosobre,
+  .titulo,
+  .titulo-galeria,
+  .titulo3 {
+    font-size: 5vw;
+  }
+
+  .text-sobre p {
+    font-size: 2.5vw;
+  }
+
+  .grid-desenhos {
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-desenho {
+    max-width: 25vw;
+  }
+
+  .container-section {
+    width: 88vw;
+    height: 30%;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 25vw;
+    height: 35vw;
+  }
+
+  .texto-contato,
+  .login-registro {
+    font-size: 2.5vw;
+  }
+
+  .icones-contato {
+    font-size: 3vw;
+  }
+
+  .contato-agendamento {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2vw;
+  }
+
+  footer {
+    margin-top: 10%;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: agrandir;
+  }
+
+  .footer-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 4vw;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-info,
+  .footer-bottom {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* ou center, dependendo do visual que quiser */
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: 84%;
+    margin: 3vw auto 0 auto;
+    margin-bottom: 5vh;
+    gap: 1.3vh;
+    box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+    border: solid #00000069 0.05vw;
+    border-radius: 0.52vw;
+  }
+
+  .container-logo {
+    margin-top: 2.6vw;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    border-radius: 0.52vw;
+  }
+
+  .logottatto {
+    width: 70%;
+    height: auto;
+  }
+
+  .portifolio a,
+  .disponiveis a,
+  .agendamento a,
+  .login a {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+  }
+
+  .titulosobre,
+  .titulo,
+  .titulo-galeria,
+  .titulo3 {
+    font-size: 5vw;
+  }
+
+  .text-sobre p {
+    font-size: 2.5vw;
+  }
+
+  .grid-desenhos {
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-desenho {
+    max-width: 25vw;
+    border-radius: 7px;
+  }
+
+
+  .container-section {
+    width: 88vw;
+    height: 60vh;
+  }
+
+  .container-wrapper {
+    margin-bottom: 10vh;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 25vw;
+    height: 35vw;
+  }
+
+  .texto-contato,
+  .login-registro {
+    font-size: 2.5vw;
+  }
+
+  .icones-contato {
+    font-size: 3.5vw;
+  }
+
+  .contato-agendamento {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2vw;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: agrandir;
+  }
+
+  .footer-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 4vw;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-info,
+  .footer-bottom {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* ou center, dependendo do visual que quiser */
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: 87%;
+    margin: 3vw auto 0 auto;
+    margin-bottom: 5vh;
+    gap: 1.3vh;
+    box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+    border: solid #00000069 0.05vw;
+    border-radius: 0.52vw;
+  }
+
+  .container-logo {
+    margin-top: 2.6vw;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    border-radius: 0.52vw;
+    width: 80vw;
+    height: 8vw;
+  }
+
+  .logottatto {
+    width: 100%;
+    height: auto;
+  }
+
+  .portifolio a,
+  .disponiveis a,
+  .agendamento a,
+  .login a {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+  }
+
+  .titulosobre,
+  .titulo,
+  .titulo-galeria,
+  .titulo3 {
+    font-size: 5vw;
+  }
+
+  .text-sobre p {
+    font-size: 2.5vw;
+  }
+
+  .grid-desenhos {
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-desenho {
+    max-width: 25vw;
+    border-radius: 7px;
+  }
+
+
+  .container-section {
+    width: 88vw;
+    height: 60vh;
+  }
+
+  .container-wrapper {
+    margin-bottom: 5vh;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 25vw;
+    height: 35vw;
+  }
+
+  .texto-contato,
+  .login-registro {
+    font-size: 2.5vw;
+  }
+
+  .icones-contato {
+    font-size: 3.5vw;
+  }
+
+  .contato-agendamento {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3vw;
+  }
+
+  .container-sectiontree {
+    margin-bottom: 5vh;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: agrandir;
+  }
+
+  .footer-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 4vw;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-info,
+  .footer-bottom {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  body {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* ou center, dependendo do visual que quiser */
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: 87%;
+    margin: 3vw auto 0 auto;
+    margin-bottom: 5vh;
+    gap: 1.3vh;
+    box-shadow: 0px 0px 2.6vw rgba(0, 0, 0, 0.3);
+    border: solid #00000069 0.05vw;
+    border-radius: 1.52vw;
+  }
+
+  .container-logo {
+    margin-top: 2.6vw;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    border-radius: 0.52vw;
+    width: 80vw;
+    height: 8vw;
+  }
+
+  .logottatto {
+    width: 100%;
+    height: auto;
+  }
+
+  .portifolio a,
+  .disponiveis a,
+  .agendamento a,
+  .login a {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+  }
+
+  .titulosobre,
+  .titulo,
+  .titulo-galeria,
+  .titulo3 {
+    font-size: 6vw;
+  }
+
+  .container-sectiontwo {
+
+    flex-direction: column;
+    /* empilha o conteúdo */
+    height: auto;
+    /* muda aqui pra se ajustar ao conteúdo */
+
+  }
+
+  .text-sobre {
+    margin-left: 100px;
+    width: 100%;
+    height: auto;
+  }
+
+  .text-sobre p {
+    font-size: 3.5vw;
+  }
+
+  .container-img {
+    width: 80%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-bottom: 10%;
+  }
+
+  .container-img .img-tatto{
+    border-radius: 10px;
+  }
+ 
+  .grid-desenhos {
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-desenho {
+    max-width: 25vw;
+    border-radius: 7px;
+  }
+
+
+  .container-section {
+    width: 88vw;
+    height: 60vh;
+  }
+
+  .container-wrapper {
+    width: 40%;
+    margin-bottom: 40%;
+    transform: scale(1.9);
+
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 25vw;
+    height: 35vw;
+  }
+
+  .texto-contato,
+  .login-registro {
+    font-size: 2.5vw;
+  }
+
+  .icones-contato {
+    font-size: 3.5vw;
+  }
+
+  .contato-agendamento {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3vw;
+  }
+
+  .container-sectiontree {
+    margin-bottom: 5vh;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: agrandir;
+  }
+
+  .footer-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 4vw;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-info,
+  .footer-bottom {
+    font-size: 1.5vw;
+  }
+}
